@@ -7,6 +7,7 @@ package extractLocalVariable;
  */
 public class DobleRefactor {
 	public int calculaDoble(int valor) {
-		return 2 * valor;
+		int doble = 2; // Creo la variable de tipo int que se llama "doble" le asigno el valor de 2 y en donde estaba return 2 * valor
+		return doble * valor;  // remplazo el 2 con la variable
 	}
 }

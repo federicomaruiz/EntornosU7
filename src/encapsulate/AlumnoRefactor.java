@@ -7,8 +7,8 @@ package encapsulate;
  * Luego ejecuta el Test JUnit para comprobar que es correcto 
  */
 public class AlumnoRefactor {
-	String nombre;
-	int nota;
+	private String nombre; // Cambie el stributo nombre y nota a privados
+	private int nota;
 
 	public AlumnoRefactor(String nombre, int nota) {
 		this.nombre = nombre;
@@ -19,7 +19,7 @@ public class AlumnoRefactor {
 		return mayorIgual5();
 	}
 
-	public boolean mayorIgual5() {
+	private boolean mayorIgual5() {  // Cambie el metodo a private
 		return nota >= 5;
 	}
 }

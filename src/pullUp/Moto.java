@@ -10,7 +10,5 @@ public class Moto extends Vehiculo {
 	private String matricula;
 	private String casco;
 
-	public String arrancar() {
-		return "Brummm, brummm";
-	}
+	
 }

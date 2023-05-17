@@ -7,8 +7,11 @@ package extractConstant;
  */
 
 public class PVPRefactor {
+	// Creo dentro de la clase el atributo , constante IVA (con mayusculas )
+	// Luego lo reemplazo por el 21.
+	private final int IVA = 21;
 	public double calculaPVP(double precio) {
-		double impuestos = (precio * 21) / 100;
+		double impuestos = (precio * IVA) / 100;
 		return precio + impuestos;
 	}
 }

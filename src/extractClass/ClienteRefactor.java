@@ -2,20 +2,19 @@ package extractClass;
 
 import java.util.Date;
 
+/*
+ * Saque los atributos tarjeta de credito, fecha tarjeta de credito , y numero control tarjeta de credito
+ * y los meti en otra clase que se llama tarjeta con sus metodos getters y setters, en esta clase solo deje el cliente
+ * con su dni y nombre.
+ * */
+
 public class ClienteRefactor {
 	private String nombre;
 	private String dni;
-	private String tarjetaCredito;
-	private Date fechaTarjetaCredito;
-	private int numeroControTarjetaCredito;
-
+	
 	public ClienteRefactor(String nombre, String dni) {
 		this.nombre = nombre;
 		this.dni = dni;
-	}
-
-	public boolean estaCaducada() {
-		return fechaTarjetaCredito.before(new Date());
 	}
 
 	public boolean esValidoDni() {
@@ -42,30 +41,6 @@ public class ClienteRefactor {
 
 	public void setDni(String dni) {
 		this.dni = dni;
-	}
-
-	public String getCreditCard() {
-		return tarjetaCredito;
-	}
-
-	public void setCreditCard(String creditCard) {
-		this.tarjetaCredito = creditCard;
-	}
-
-	public Date getCreditCardDate() {
-		return fechaTarjetaCredito;
-	}
-
-	public void setCreditCardDate(Date creditCardDate) {
-		this.fechaTarjetaCredito = creditCardDate;
-	}
-
-	public int getCreditCardControlNumber() {
-		return numeroControTarjetaCredito;
-	}
-
-	public void setCreditCardControlNumber(int creditCardControlNumber) {
-		this.numeroControTarjetaCredito = creditCardControlNumber;
 	}
 
 }

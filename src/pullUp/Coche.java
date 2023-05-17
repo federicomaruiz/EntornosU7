@@ -7,7 +7,6 @@ package pullUp;
  */
 
 public class Coche extends Vehiculo {
-	private String matricula;
 	private String maletero;
 	private boolean abiertoMaletero;
 

@@ -8,8 +8,6 @@ package pushDown;
  */
 public class Vehiculo {
 	protected String name;
-	protected String plate;
-	protected Seguro insurance;
 
 	public String arrancar() {
 		return "Brummm, brummm";
